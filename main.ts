@@ -1,6 +1,6 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Cedric 
+ * Created by: Cedric
  * Created on: Nov 2023
  * This program moves a pixel around the microbit
 */

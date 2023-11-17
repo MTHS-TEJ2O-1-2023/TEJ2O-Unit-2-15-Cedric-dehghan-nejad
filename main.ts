@@ -16,26 +16,26 @@ basic.showIcon(IconNames.Happy)
 
 // when button A is pressed, move sprite around edge
 input.onButtonPressed(Button.A, function () {
-    // prep screen
-    basic.clearScreen()
-    sprite = game.createSprite(0, 0)
+  // prep screen
+  basic.clearScreen()
+  sprite = game.createSprite(0, 0)
 
-    loopCounter = 0
+  loopCounter = 0
     while (loopCounter <= 3) {
-        // reset ledCoordinate
-        ledCoordinate = 0
-        while (ledCoordinate <= 4) {
-            // move ledCoordinate
-            basic.pause(500)
-            sprite.move(1)
-            ledCoordinate++
+    // reset ledCoordinate
+    ledCoordinate = 0
+    while (ledCoordinate <= 4) {
+      // move ledCoordinate
+      basic.pause(500)
+      sprite.move(1)
+      ledCoordinate++
         }
-        // tuning 90 degrees
-        sprite.turn(Direction.Right, 90)
-        loopCounter++
-    }
-    // clean up
-    sprite.delete()
-    basic.pause(500)
-    basic.showIcon(IconNames.Happy)
+    // tuning 90 degrees
+    sprite.turn(Direction.Right, 90)
+    loopCounter++
+  }
+  // clean up
+  sprite.delete()
+  basic.pause(500)
+  basic.showIcon(IconNames.Happy)
 })
